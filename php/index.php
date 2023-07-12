@@ -13,7 +13,7 @@
     	<input type="submit" name="register">
     </form>
         <?php 
-        include("registrar.php");
+        include("registrarDatos.php");
         ?>
 </body>
 </html>
