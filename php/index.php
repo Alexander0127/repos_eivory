@@ -9,7 +9,7 @@
     <form method="post">
     	<h1>¡Suscribete!</h1>
     	<input type="text" name="name" placeholder="Nombre completo">
-    	<input type="email" name="email" placeholder="Email">
+    	<input type="email" name="edad" placeholder="Edad">
     	<input type="submit" name="register">
     </form>
         <?php 
