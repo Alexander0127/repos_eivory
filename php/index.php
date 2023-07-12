@@ -12,8 +12,5 @@
     	<input type="email" name="email" placeholder="Email">
     	<input type="submit" name="register">
     </form>
-        <?php 
-        include("registrar.php");
-        ?>
 </body>
 </html>
