@@ -8,7 +8,7 @@ if (isset($_POST['register'])) {
 	    $consulta = "INSERT INTO usuario(nombre, edad) VALUES ('$name','$edad')";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) 
-	    	{
+	    	{?>
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
             <?php
 	    } else {
