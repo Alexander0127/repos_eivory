@@ -1,5 +1,4 @@
 include("conexion.php");
-
 if (isset($_POST['register'])) {
     if (strlen($_POST['name']) >= 1 && strlen($_POST['edad']) >= 1) {
 	    $name = trim($_POST['name']);
@@ -10,7 +9,7 @@ if (isset($_POST['register'])) {
 	    	?> 
 	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
            <?php
-	    } else {
+	    }else{
 	    	?> 
 	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
            <?php
