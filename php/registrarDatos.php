@@ -1,3 +1,4 @@
+<?php
 include("conexion.php");
 
 if (isset($_POST['register'])) {
@@ -7,11 +8,12 @@ if (isset($_POST['register'])) {
 
 	    $consulta = "INSERT INTO usuario(nombre, edad) VALUES ('$name','$edad')";
 	    $resultado = mysqli_query($conex,$consulta);
-	    if ($resultado) 
-	    	{
-	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
+	    if ($resultado) {
+            <? <h3 class="ok">¡Te has inscripto correctamente!</h3>
             <?php
-	    } else {
+        }
+
+	     else {
 	    	?> 
 	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
            <?php
@@ -22,3 +24,4 @@ if (isset($_POST['register'])) {
            <?php
     }
 }
+?>
