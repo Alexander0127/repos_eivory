@@ -2,7 +2,7 @@
 include("conexion.php");
 
 if (isset($_POST['register'])) {
-    if (strlen($_POST['name']) >= 1 && strlen($_POST['edad']) >= 1) {
+    if (strlen($_POST['name']) >= 1 && strlen($_POST['lastname']) >= 1 && strlen($_POST['phone']) >= 1 && strlen($_POST['phone']) >= 1 && strlen($_POST['addres']) >= 1 && strlen($_POST['email']) >= 1 && strlen($_POST['password']) >= 1) {
 	    $name = trim($_POST['name']);
 	    $edad = trim($_POST['edad']);
 	    $consulta = "INSERT INTO usuario(nombre, edad) VALUES ('$name','$edad')";
