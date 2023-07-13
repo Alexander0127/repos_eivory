@@ -4,7 +4,11 @@ include("conexion.php");
 if (isset($_POST['register'])) {
     if (strlen($_POST['name']) >= 1 && strlen($_POST['edad']) >= 1) {
 	    $name = trim($_POST['name']);
-	    $edad = trim($_POST['edad']);
+	    $lastname = trim($_POST['lstname']);
+		$phone = trim($_POST['phone']);
+		$addres = trim($_POST['addres']);
+		$email = trim($_POST['email']);
+		$password = trim($_POST['password']);
 	    $consulta = "INSERT INTO usuario(nombre, edad) VALUES ('$name','$edad')";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) 
