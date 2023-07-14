@@ -7,8 +7,8 @@
 </head>
 <body>
 	<header>
-		<input type="submit" value="Iniciar sesión">
-		<input type="submit" value="Registrarse">
+		<input class="header-button" type="submit" value="INICIAR">
+		<input class="header-button"  type="submit" value="REGISTRAR">
 	</header>
 	<div class="formulario">
 		<h2>Crear cuenta</h2>

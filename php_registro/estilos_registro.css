@@ -10,6 +10,10 @@ header{
     width: 100%;
     height: 100px;
     background-color: #112844;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 .formulario{
     width:85% ;
@@ -32,7 +36,18 @@ form{
 input{
     width: 180px;
     height: 20px;
-    background-color:#f2f4f3 ;
+    background-color:#fcfdfd ;
     border: none;
     border-bottom: 1px solid #112844;
+    outline: none;
+}
+
+/* estilos de los botones del header */
+.header-button{
+    width: 100px;
+    height: 30px;
+    margin: 15px;
+    border-radius: 0.5em;
+    background-color: #1c6ccd;
+    color: #fcfdfd;
 }
