@@ -6,17 +6,17 @@ if (isset($_POST['LOGIN'])) {
 		
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
-        $verificar_id = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' and contraseña = $password");    
-        if(mysqli_num_rows($verificar_id) > 0){
-            if ($resultado) 
-				{header("location: bienvenido.php");
-			} 
-            else {
-				?> 
+        $verificar_login = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' and contrasena = '$password'");    
+        if(mysqli_num_rows($verificar_login) > 0){
+            ?>
+                    <h3 class="ok">¡Te has inscripto correctamente!</h3>
+            <?php
+        }
+        else{
+            ?> 
 				<h3 class="bad">¡Ups ha ocurrido un error!</h3>
 			   <?php
-			}
         }
-    	 }
+    	}
 }
 ?>
