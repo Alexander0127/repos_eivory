@@ -1,15 +1,12 @@
 <?php
 include("conexion.php");
 
-if (isset($_POST['register'])) {
-    if (strlen($_POST['name']) >= 1 && strlen($_POST['lastname']) >= 1 && strlen($_POST['phone']) >= 1 && strlen($_POST['addres']) >= 1 && strlen($_POST['email']) >= 1 && strlen($_POST['password']) >= 1 ) {
-		$name = trim($_POST['name']);
-	    $lastname = trim($_POST['lastname']);
-		$phone = trim($_POST['phone']);
-		$addres = trim($_POST['addres']);
+if (isset($_POST['LOGIN'])) {
+    if (strlen($_POST['email']) >= 1 && strlen($_POST['password']) >= 1 ) {
+		
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
-
+        $verificar_id = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' AND contraseña = $password");    
 		
     	 }
 }
