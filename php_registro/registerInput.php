@@ -21,7 +21,8 @@ if (isset($_POST['register'])) {
 		}while($pase = 0);
 		
 		$verificar_correo = mysqli_query($conex, "SELECT * FROM register WHERE email='$email'");
-		if(mysqli_num_rows($verificar_id) > 0){?> 
+		if(mysqli_num_rows($verificar_id) > 0)
+		{?> 
 	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
            <?php}
 		else{$consulta = "INSERT INTO register(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES ($idusu,'$name','$lastname','$phone','$addres','$email','$password')";
@@ -36,12 +37,12 @@ if (isset($_POST['register'])) {
 			   <?php
 			}
 	    
-    }   
+    		}   
 	
 	else {
 	    	?> 
 	    	<h3 class="bad">¡Por favor complete los campos!</h3>
            <?php
-    }
-}}
+    	 }
+}
 ?>
