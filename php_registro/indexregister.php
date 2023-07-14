@@ -6,6 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="estilos_registro.css">
 </head>
 <body>
+	<header>
+	</header>
 	<div class="formulario">
 		<form method="post">
 			<input type="text" name="name" placeholder="Nombres">
