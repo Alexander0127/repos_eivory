@@ -8,9 +8,7 @@ if (isset($_POST['LOGIN'])) {
 		$password = trim($_POST['password']);
         $verificar_login = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' and contrasena = '$password'");    
         if(mysqli_num_rows($verificar_login) > 0){
-            ?>
-                    <h3 class="ok">¡Te has inscripto correctamente!</h3>
-            <?php
+            header("location: bienvenido.php");
         }
         else{
             ?> 
