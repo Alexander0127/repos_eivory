@@ -43,5 +43,5 @@ if (isset($_POST['register'])) {
 	    	<h3 class="bad">¡Por favor complete los campos!</h3>
            <?php
     }
-}
+}}
 ?>
