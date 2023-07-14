@@ -7,8 +7,11 @@
 </head>
 <body>
 	<header>
+		<input type="submit" value="Iniciar sesión">
+		<input type="submit" value="Registrarse">
 	</header>
 	<div class="formulario">
+		<h2>Crear cuenta</h2>
 		<form method="post">
 			<input type="text" name="name" placeholder="Nombres">
 			<input type="text" name="lastname" placeholder="Apellidos">
