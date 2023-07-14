@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
 
 	    if ($resultado) 
 	    	{?>
-	    	<h3 class="ok">¡Te has inscripto correctamente!</h3>
+	    	<h3 class="ok">¡Te has registrado correctamente!</h3>
             <?php
 	    } else {
 	    	?> 
