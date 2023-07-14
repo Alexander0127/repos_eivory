@@ -17,7 +17,7 @@
     	<input type="submit" name="register">
     </form>
         <?php 
-        include("registrarDatos.php");
+        include("registerInput.php");
         ?>
 </body>
 </html>
