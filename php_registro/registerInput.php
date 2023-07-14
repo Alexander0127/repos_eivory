@@ -13,7 +13,7 @@ if (isset($_POST['register'])) {
 		do{
 			$pase = 2;
 			$idusu = rand(100000000, 999999999);
-			$verificar_id = mysqli_query($conex, "SELECT * FROM register_usuario WHERE id_usuario='$idusu'");
+			$verificar_id = mysqli_query($conex, "SELECT * FROM register WHERE id_usuario='$idusu'");
 			if (mysqli_num_rows($verificar_id) > 0) {
 				$pase = 1;
 			}
