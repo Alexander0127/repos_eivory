@@ -9,7 +9,18 @@ if (isset($_POST['register'])) {
 		$addres = trim($_POST['addres']);
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
-	    $consulta = "INSERT INTO register(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES (1,'$name','$lastname','$phone','$addres','$email','$password')";
+
+		do{
+			$pase = 2;
+			$idusu = rand(100000000, 999999999);
+			$verificar_id = mysqli_query($conex, "SELECT * FROM register_usuario WHERE id_usuario='$idusu'");
+			if (mysqli_num_rows($verificar_id) > 0) {
+				$pase = 1;
+			}
+			else{$pase = 0; echo "Numero de pase es: '$pase'";}
+		}while($pase = 0);
+
+	    $consulta = "INSERT INTO register(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES ($idusu,'$name','$lastname','$phone','$addres','$email','$password')";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) 
 	    	{?>
