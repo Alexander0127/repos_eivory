@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Registrar usuario</title>
+	<title>LOG DE USUARIO</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="estilos_registro.css">
 </head>
@@ -15,7 +15,7 @@
 	</div>
     
         <?php 
-        include("registerInput.php");
+        include("loginInput.php");
         ?>
 </body>
 </html>
