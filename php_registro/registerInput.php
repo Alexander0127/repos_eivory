@@ -9,7 +9,7 @@ if (isset($_POST['register'])) {
 		$addres = trim($_POST['addres']);
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
-	    $consulta = "INSERT INTO register_usuario(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES ('$id_usuario','$name','$lastname','$phone','$addres','$email','$password')";
+	    $consulta = "INSERT INTO register(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES (1,'$name','$lastname','$phone','$addres','$email','$password')";
 	    $resultado = mysqli_query($conex,$consulta);
 	    if ($resultado) 
 	    	{?>
