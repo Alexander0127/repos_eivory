@@ -6,7 +6,7 @@ if (isset($_POST['LOGIN'])) {
 		
 		$email = trim($_POST['email']);
 		$password = trim($_POST['password']);
-        $verificar_id = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' AND contraseña = $password");    
+        $verificar_id = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' and contraseña = $password");    
         if(mysqli_num_rows($verificar_id) > 0){
             if ($resultado) 
 				{header("location: bienvenido.php");

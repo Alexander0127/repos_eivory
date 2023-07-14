@@ -25,7 +25,7 @@ if (isset($_POST['register'])) {
 		{?> 
 	    	<h3 class="bad">¡Ups ha ocurrido un error!</h3>
            <?php}
-		else{$consulta = "INSERT INTO register(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES ($idusu,'$name','$lastname','$phone','$addres','$email','$password')";
+		else{$consulta = "INSERT INTO register(id_usuario, nombre, apellido, telefono, direccion, email, contrasena) VALUES ($idusu,'$name','$lastname','$phone','$addres','$email','$password')";
 			$resultado = mysqli_query($conex,$consulta);
 			if ($resultado) 
 				{?>
