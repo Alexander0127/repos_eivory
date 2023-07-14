@@ -14,7 +14,6 @@
 			<input type="text" name="addres" placeholder="Dirección de entrega">
 			<input type="text" name="email" placeholder="Correo Electrónico">
 			<input type="text" name="password" placeholder="Contraseña">
-			<input type="text" name="id_usuario" placeholder="xd">
 			<input type="submit" name="register">
     	</form>
 	</div>
