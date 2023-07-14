@@ -9,10 +9,9 @@ if (isset($_POST['LOGIN'])) {
         $verificar_id = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' AND contraseña = $password");    
         if(mysqli_num_rows($verificar_id) > 0){
             if ($resultado) 
-				{?>
-				<h3 class="ok">¡Te has inscripto correctamente!</h3>
-				<?php
-			} else {
+				{header("location: bienvenido.php");
+			} 
+            else {
 				?> 
 				<h3 class="bad">¡Ups ha ocurrido un error!</h3>
 			   <?php
