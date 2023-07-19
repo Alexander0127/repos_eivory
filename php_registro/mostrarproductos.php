@@ -7,6 +7,7 @@
 </head>
 <body>
     <h1>AQUI SE MOSTRARAN LOS PRODUCTOS</h1>
+    <table border="2">
     <?php
         include("conexion.php");
 
@@ -14,15 +15,16 @@
         $conexion_muestra = mysqli_query($conex, $muestra);
         while($mostrar = mysqli_fetch_array($conexion_muestra)){
             ?>
-            <tr>
-                <td><?php echo $mostrar['name_producto']?></td>
-                <td><?php echo $mostrar['precio_producto']?></td>
-                <td><img src="data:image/jpg;base64, <?php echo base64_encode($mostrar['img_producto'])?>"></td>
-            </tr>
+            
+            <tr><td><img width="200px" src="data:image/jpg;base64, <?php echo base64_encode($mostrar['img_producto'])?>"></td></tr>
+            <tr><td><?php echo $mostrar['name_producto']?></td></tr>
+            <tr><td><?php echo $mostrar['precio_producto']?></td></tr>
+            
 
 
         <?php
         }
         ?>
+        </table>
 </body>
 </html>
