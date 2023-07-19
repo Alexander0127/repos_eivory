@@ -3,12 +3,12 @@
 <head>
 	<title>LOG DE USUARIO</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="estilos_registro.css">
+	<link rel="stylesheet" type="text/css" href="estilos_login.css">
 </head>
-<body>
+<body class="content">
 <header>
-		<input class="header-button" type="submit" value="INICIAR">
-		<input class="header-button"  type="submit" value="REGISTRAR">
+		<a href="./login.php" class="header-button">INICIAR</a>
+		<a href="./indexregister.php" class="header-button">REGISTRAR</a>
 	</header>
 	<main>
 		<div class="formulario">
@@ -23,5 +23,6 @@
 			</form>
 		</div>
 	</main>
+	<script src="./cambio.js" ></script>
 </body>
 </html>

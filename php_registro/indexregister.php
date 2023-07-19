@@ -7,8 +7,8 @@
 </head>
 <body>
 	<header>
-		<input class="header-button" type="submit" value="INICIAR">
-		<input class="header-button"  type="submit" value="REGISTRAR">
+		<a href="./login.php" class="header-button">INICIAR</a>
+		<a href="./indexregister.php" class="header-button">REGISTRAR</a>
 	</header>
 	<main>
 		<div class="formulario">
