@@ -12,7 +12,7 @@
 	</header>
 	<main>
 		<div class="formulario">
-			<h2>Crear cuenta</h2>
+			<h2>Iniciar sesión</h2>
 			<?php 
         	include("registerInput.php");
         	?>
