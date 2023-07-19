@@ -2,12 +2,12 @@
     include("conexion.php");
 
     if(isset($_POST['AgregarProducto'])){
-        if(strlen($_POST['codigoproducto']) >= 1 && strlen($_POST['nameproducto']) >= 1 && strlen($_POST['precio']) >= 1 && strlen($_POST['imgproducto'])){
+        if(strlen($_POST['codigoproducto']) >= 1 && strlen($_POST['nameproducto']) >= 1 && strlen($_POST['precio']) >= 1){
 
             $codigo_producto = trim($_POST['codigoproducto']);
             $name_producto = trim($_POST['nameproducto']);
             $precio_producto = trim($_POST['precio']);
-            $img_producto = trim($_POST['imgproducto']);
+            $img_producto = addslashes(file_get_contents($_FILES['imgproducto']['tmp_name']));
 
             $agregado = "INSERT INTO tabla_productos(id_producto, name_producto, precio_producto, img_producto) VALUES ('$codigo_producto','$name_producto','$precio_producto','$img_producto')";
             $verificar_aggProducto = mysqli_query($conex,$agregado);
