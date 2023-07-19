@@ -9,7 +9,8 @@
             $precio_producto = trim($_POST['precio']);
             $img_producto = trim($_POST['imgproducto']);
 
-            $verificar_aggProducto = mysqli_query($conex, "INSERT INTO tabla_productos(id_producto, name_producto, precio_producto, img_producto) VALUES ('$codigo_producto','$name_producto','$precio_producto','$img_producto')");
+            $agregado = "INSERT INTO tabla_productos(id_producto, name_producto, precio_producto, img_producto) VALUES ('$codigo_producto','$name_producto','$precio_producto','$img_producto')";
+            $verificar_aggProducto = mysqli_query($conex,$agregado);
 
             if ($verificar_aggProducto) 
 	    	{?>

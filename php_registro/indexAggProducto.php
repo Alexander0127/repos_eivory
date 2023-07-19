@@ -8,6 +8,9 @@
 <body>
         <div class="formulario">
 			<h2>Crear cuenta</h2>
+            <?php 
+        	include("AgregarProducto.php");
+        	?>
 			<form method="post">				
 				<input type="text" name="codigoproducto" placeholder="codigo producto">
                 <input type="text" name="nameproducto" placeholder="Nombre del producto">
