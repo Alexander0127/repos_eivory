@@ -14,7 +14,7 @@
                 <input type="text" name="nameproducto" placeholder="Nombre del producto">
 				<input type="number" name="precio" placeholder="Precio Producto">
 				<input type="file" name="imgproducto" placeholder="Imagen producto">
-				<input type="submit" name="AgregarProducto">
+				<input id="form-button-crear" type="submit" value="Registrarse" name="AgregarProducto">
 			</form>
 		</div>
 </body>
