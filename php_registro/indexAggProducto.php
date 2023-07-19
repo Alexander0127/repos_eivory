@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilos_registro.css">
-    <title>Document</title>
+    <title>AGREGAR PRODUCTOS</title>
 </head>
 <body>
         <div class="formulario">
 			<h2>Crear cuenta</h2>
+            <?php 
+        	include("AgregarProducto.php");
+        	?>
 			<form method="post">				
 				<input type="text" name="codigoproducto" placeholder="codigo producto">
                 <input type="text" name="nameproducto" placeholder="Nombre del producto">
