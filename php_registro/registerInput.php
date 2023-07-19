@@ -21,9 +21,9 @@ if (isset($_POST['register'])) {
 		}while($pase = 0);
 		
 
-	    $consulta = "INSERT INTO register_usuario(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES ('$idusu','$name','$lastname','$phone','$addres','$email','$password')";
+	    $consulta = "INSERT INTO register(id_usuario, nombre, apellido, telefono, direccion, email, contraseña) VALUES ('$idusu','$name','$lastname','$phone','$addres','$email','$password')";
 	    $resultado = mysqli_query($conex,$consulta);
-		
+			
 
 		
 
