@@ -3,7 +3,7 @@
 <head>
 	<title>Registrar usuario</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="estilos_registro.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos_registro.css">
 </head>
 <body>
 	<header>

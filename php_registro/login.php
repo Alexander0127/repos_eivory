@@ -3,7 +3,7 @@
 <head>
 	<title>LOG DE USUARIO</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="estilos_login.css">
+	<link rel="stylesheet" type="text/css" href="../estilos/estilos_login.css">
 </head>
 <body class="content">
 <header>
@@ -23,6 +23,5 @@
 			</form>
 		</div>
 	</main>
-	<script src="./cambio.js" ></script>
 </body>
 </html>
