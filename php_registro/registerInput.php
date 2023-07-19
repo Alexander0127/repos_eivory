@@ -17,7 +17,7 @@ if (isset($_POST['register'])) {
 			if (mysqli_num_rows($verificar_id) > 0) {
 				$pase = 1;
 			}
-			else{$pase = 0; echo "Numero de pase es: '$pase'";}
+			else{$pase = 0;}
 		}while($pase = 0);
 		
 
