@@ -17,7 +17,7 @@
             <tr>
                 <td><?php echo $mostrar['name_producto']?></td>
                 <td><?php echo $mostrar['precio_producto']?></td>
-                <td><?php echo $mostrar['img_producto']?></td>
+                <td><img src="data:image/jpg;base64, <?php echo base64_encode($mostrar['img_producto'])?>"></td>
             </tr>
 
 
