@@ -10,6 +10,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    overflow-y: hidden;
 }
 main{
     width: 100%;
@@ -24,6 +25,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
 .formulario{
     width:350px ;
@@ -43,7 +45,8 @@ form{
     justify-content: center;
     align-self: flex-end;
 }
-input{
+
+form input:not([type="submit"]){
     width: 180px;
     height: 25px;
     background-color:#EFEFEF ;
@@ -51,6 +54,19 @@ input{
     outline: none;
     border-radius: 5px;
     font-size: 12px;
+    padding: 2px 0px 2px 30px;
+}
+h2{
+    color:#153463;
+}
+#form-button-crear{
+    width: 200px;
+    height: 50px;
+    margin: 0 100px 30px 100px;
+    border:none;
+    background-color: #1c6ccd;
+    color: #ffffff;
+    font-size: 14px;
 }
 /* eliminar estilos de input type number */
 input[type=number]::-webkit-inner-spin-button, 
@@ -62,8 +78,8 @@ input[type=number]::-webkit-outer-spin-button {
 .header-button{
     width: 100px;
     height: 30px;
-    border-radius: 0.5em;
+    border:none;
     background-color: #1c6ccd;
     color: #fcfdfd;
-    margin: 0 20px;
+    margin:0 20px;
 }

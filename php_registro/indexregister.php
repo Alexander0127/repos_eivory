@@ -13,6 +13,9 @@
 	<main>
 		<div class="formulario">
 			<h2>Crear cuenta</h2>
+			<?php 
+        include("registerInput.php");
+        ?>
 			<form method="post">
 				<input type="text" name="name" placeholder="Nombres">
 				<input type="text" name="lastname" placeholder="Apellidos">
@@ -20,13 +23,12 @@
 				<input type="text" name="addres" placeholder="Dirección de entrega">
 				<input type="text" name="email" placeholder="Correo Electrónico">
 				<input type="text" name="password" placeholder="Contraseña">
-				<input type="submit" name="register">
+				<input id="form-button-crear" type="submit" value="Registrarse" name="register">
 			</form>
 		</div>
+		
 	</main>
     
-        <?php 
-        include("registerInput.php");
-        ?>
+        
 </body>
 </html>
