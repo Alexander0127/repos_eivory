@@ -2,7 +2,7 @@
     include("conexion.php");
 
     if(isset($_POST['AgregarProducto'])){
-        if(strlen($_POST['codigoproducto']) >= 1 && strlen($_POST['nameproducto']) >= 1 && strlen($_POST['precio']) >= 1 && strlen($_POST['imgproducto'])){
+        if(strlen($_POST['codigoproducto']) >= 1 && strlen($_POST['nameproducto']) >= 1 && strlen($_POST['precio']) >= 1){
 
             $codigo_producto = trim($_POST['codigoproducto']);
             $name_producto = trim($_POST['nameproducto']);

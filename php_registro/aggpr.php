@@ -7,14 +7,14 @@ if(isset($_POST['AgregarProducto'])){
     $name_producto = $_POST['nameproducto'];
     $precio_producto = $_POST['precio'];
 
-    if(isset($imagen) && $imagen != ""){
+    if(isset($img_producto) && $img_producto != ""){
         $tipo = $_FILES['imgproducto']['type'];
         $temp  = $_FILES['imgproducto']['tmp_name'];
 
        if( !((strpos($tipo,'gif') || strpos($tipo,'jpeg') || strpos($tipo,'webp')))){
           $_SESSION['mensaje'] = 'solo se permite archivos jpeg, gif, webp';
           $_SESSION['tipo'] = 'danger';
-          header('location:../index.php');
+          header('location:../indexAggProducto.php');
        }else{
          $query = "INSERT INTO tabla_productos(id_producto, name_producto, precio_producto, img_producto) VALUES ('$codigo_producto','$name_producto','$precio_producto','$img_producto')";
          $resultado = mysqli_query($conn,$query);
