@@ -7,7 +7,7 @@
             $codigo_producto = trim($_POST['codigoproducto']);
             $name_producto = trim($_POST['nameproducto']);
             $precio_producto = trim($_POST['precio']);
-            $img_producto = trim($_POST['imgproducto']);
+            $img_producto = trim($_FILES['imgproducto']);
 
             $agregado = "INSERT INTO tabla_productos(id_producto, name_producto, precio_producto, img_producto) VALUES ('$codigo_producto','$name_producto','$precio_producto','$img_producto')";
             $verificar_aggProducto = mysqli_query($conex,$agregado);

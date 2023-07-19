@@ -10,7 +10,7 @@
         <div class="formulario">
 			<h2>Crear cuenta</h2>
             <?php 
-        	include("AgregarProducto.php");
+        	include("aggpr.php");
         	?>
 			<form method="post">				
 				<input type="text" name="codigoproducto" placeholder="codigo producto">
