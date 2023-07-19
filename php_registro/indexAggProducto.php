@@ -12,7 +12,7 @@
             <?php 
         	include("AgregarProducto.php");
         	?>
-			<form method="post" enctype="multipart/form-data">				
+			<form action="AgregarProducto.php" method="post" enctype="multipart/form-data">				
 				<input type="text" name="codigoproducto" placeholder="codigo producto">
                 <input type="text" name="nameproducto" placeholder="Nombre del producto">
 				<input type="number" name="precio" placeholder="Precio Producto">
