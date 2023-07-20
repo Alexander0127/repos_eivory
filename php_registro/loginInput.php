@@ -13,7 +13,7 @@ if (isset($_POST['LOGIN'])) {
             }
         }
         catch{
-            $verificar_login = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' and contrasena = '$password' and rango='usuario'");    
+            $verificar_login = mysqli_query($conex, "SELECT * FROM register WHERE email='$email' and contrasena = '$password' and rango='admin'");    
             if(mysqli_num_rows($verificar_login) > 0){
                 header("location: indexAggProducto.php");
             }
@@ -24,6 +24,6 @@ if (isset($_POST['LOGIN'])) {
                 <?php
             }
         }
-    	}
+    }
 }
 ?>

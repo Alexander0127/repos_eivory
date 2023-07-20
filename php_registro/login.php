@@ -15,7 +15,7 @@
 		<div class="formulario">
 			<h2>Iniciar sesión</h2>
 			<?php 
-        	include("registerInput.php");
+        	include("loginInput.php");
         	?>
 			<form method="post">
 				<input type="text" name="email" placeholder="Correo Electrónico">
