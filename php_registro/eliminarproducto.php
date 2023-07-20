@@ -21,7 +21,7 @@
 
             $id = trim($_POST['id']);
 
-            $eliminar = mysqli_query($conex, "DELETE FROM 'tabla_productos' WHERE 'tabla_productos'.'id' = ;");    
+            $eliminar = mysqli_query($conex, "DELETE FROM 'tabla_productos' WHERE id = '';");    
         ?>
 </body>
 </html>
