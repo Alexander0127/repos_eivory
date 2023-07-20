@@ -5,6 +5,7 @@ body{
 header{
     border: 1px solid #c3c3c3;
     display: flex;
+    min-height: 70px;
     justify-content: space-between;
     background-color: aquamarine;
     align-items: center;
@@ -17,4 +18,26 @@ header{
 
 .logo img{
     height: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media(max-width:700px){
+    header{
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
 }
