@@ -18,10 +18,15 @@
         
         <?php 
         	include("conexion.php");
+           
+            if (isset($_POST['EliminarProducto'])) {
+                if (strlen($_POST['codigoproducto']) >= 1)
+                {
+                    $id = trim($_POST['codigoproducto']);
+                    $eliminar = mysqli_query($conex, "DELETE FROM tabla_productos WHERE id_producto='$id'");    
+                }
+            }    
 
-            $id = trim($_POST['id']);
-
-            $eliminar = mysqli_query($conex, "DELETE FROM 'tabla_productos' WHERE id = '';");    
         ?>
 </body>
 </html>
