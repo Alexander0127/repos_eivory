@@ -19,7 +19,7 @@
         	?>
 			<form method="post">
 				<input type="text" name="email" placeholder="Correo Electrónico">
-				<input type="text" name="password" placeholder="Contraseña">
+				<input type="password" name="password" placeholder="Contraseña">
 				<input type="submit" id="form-button-crear" value="Iniciar sesión" name="LOGIN">
 			</form>
 		</div>
