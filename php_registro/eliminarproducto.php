@@ -21,7 +21,6 @@
         <?php 
         	include("conexion.php");
            
-           
             if (isset($_POST['busqueda'])) {
                 if (strlen($_POST['codigoproducto']) >= 1) {
                    
