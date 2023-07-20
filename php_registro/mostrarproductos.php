@@ -7,10 +7,9 @@
 </head>
 <body>
     <h1>AQUI SE MOSTRARAN LOS PRODUCTOS</h1>
-    
     <?php
         include("conexion.php");
-
+        
         $muestra = "SELECT name_producto, precio_producto, img_producto FROM tabla_productos";
         $conexion_muestra = mysqli_query($conex, $muestra);
         while($mostrar = mysqli_fetch_array($conexion_muestra)){
