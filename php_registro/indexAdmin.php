@@ -10,7 +10,7 @@
     <header> 
         <div class="logo">
             <img src="../Imagenes/Lgg.png" alt="Logo Eivory">
-            <h2 class="nombre_empresa">Somos vida</h2>
+            
         </div>
         <nav>
                 <a href="" class="nav_link">AGREGAR</a>
