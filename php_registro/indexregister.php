@@ -18,13 +18,13 @@
         	include("registerInput.php");
         	?>
 			<form method="post">
-				<input type="text" name="name" placeholder="Nombres">
-				<input type="text" name="lastname" placeholder="Apellidos">
-				<input type="number" name="phone" placeholder="Número Celular">
-				<input type="text" name="addres" placeholder="Dirección de entrega">
-				<input type="text" name="email" placeholder="Correo Electrónico">
-				<input type="text" name="password" placeholder="Contraseña">
-				<input id="form-button-crear" type="submit" value="Registrarse" name="register">
+				<input class="form-input" type="text" name="name" placeholder="Nombres">
+				<input class="form-input" type="text" name="lastname" placeholder="Apellidos">
+				<input class="form-input" type="number" name="phone" placeholder="Número Celular">
+				<input class="form-input" type="text" name="addres" placeholder="Dirección de entrega">
+				<input class="form-input" type="text" name="email" placeholder="Correo Electrónico">
+				<input class="form-input" type="text" name="password" placeholder="Contraseña">
+				<input class="form-button" type="submit" value="Registrarse" name="register">
 			</form>
 		</div>
 		
