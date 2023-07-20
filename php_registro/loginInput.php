@@ -19,7 +19,7 @@ if (isset($_POST['LOGIN'])) {
                 }
                 else{
                     ?> 
-                    <h3 class="bad">¡Ups ha ocurrido un error¡!</h3>
+                    <h3 class="bad">¡Ups ha ocurrido un error!</h3>
                     <?php
                 }
             }
