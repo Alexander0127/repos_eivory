@@ -1,4 +1,4 @@
-/* 
+
 body{
     width: 100%;
     height: 100vh;
@@ -72,13 +72,13 @@ h2{
     font-weight:600;
 }
 /* eliminar estilos de input type number */
-/* input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
 /* estilos de los botones del header */
-/* .header-button{
+.header-button{
     width: 100px;
     height: 30px;
     border:none;
@@ -90,4 +90,4 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 5px;
     border-radius: 5px;
     font-weight:500;
-} */ 
+}
