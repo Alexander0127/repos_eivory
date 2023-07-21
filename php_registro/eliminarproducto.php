@@ -34,7 +34,7 @@
                         echo "<h2>DETALLES DEL PRODUCTO:</h2>";
                         echo "Nombre: " . $producto['name_producto'] . "<br>";
                         echo "Precio: " . $producto['precio_producto'] . "<br>";?>
-                        <tr><td><img width="200px" src="data:image/jpg;base64, <?php echo base64_encode($mostrar['img_producto'])?>"></td></tr>
+                        <tr><td><img width="200px" src="data:image/jpg;base64, <?php echo base64_encode($producto['img_producto'])?>"></td></tr>
                         <?php
                     }
                 }
