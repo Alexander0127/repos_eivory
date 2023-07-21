@@ -23,7 +23,7 @@
 				<input class="form-input" type="number" name="phone" placeholder="Número Celular">
 				<input class="form-input" type="text" name="addres" placeholder="Dirección de entrega">
 				<input class="form-input" type="text" name="email" placeholder="Correo Electrónico">
-				<input class="form-input" type="text" name="password" placeholder="Contraseña">
+				<input class="form-input" type="password" name="password" placeholder="Contraseña">
 				<input class="form-button" type="submit" value="Registrarse" name="register">
 			</form>
 		</div>

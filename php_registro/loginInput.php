@@ -1,7 +1,8 @@
 <?php
-include("conexion.php");
+include("conexion.php"); //conexion con base de datos
 
-if (isset($_POST['LOGIN'])) {
+if (isset($_POST['LOGIN'])) //verifica y llama el input 
+{
     if (strlen($_POST['email']) >= 1 && strlen($_POST['password']) >= 1 ) {
 		
 		$email = trim($_POST['email']);
