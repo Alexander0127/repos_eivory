@@ -19,11 +19,38 @@ header{
     height: 50px;
     border: 1px solid #981c1c;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 /* Navbar para versión desktop */
 header ul{
     display: none;
 }
+/* nav bar mobile */
+.header-logo{
+    width: 100px;
+    height: auto;
+}
+.header-logo a{
+    width: 100px;
+    height: 40px;
+}
+.header-logo img{
+    width: 100%;
+    height: auto;
+}
+header a{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+
 /* estilos para la primera section */
 #home-section{
     background-image: url("../Imagenes/blurry-gradient-haikei\ \(3\).svg");
@@ -71,3 +98,22 @@ header ul{
 }
 
 /* Fin estilos card de srevicio */
+
+@media screen and (min-width:800px){
+    /* etiquetas de header */
+    header ul{
+        display: flex;
+        list-style: none;
+    }
+    header ul li a{
+        text-decoration: none;
+        border: 1px solid #000000;
+        width: 70px;
+        height: 25px;
+        color: #011b38;
+    }
+    .header-a-menu{
+        display: none;
+
+    }
+    }
