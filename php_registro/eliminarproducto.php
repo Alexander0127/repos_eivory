@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../estilos/estilos_registro.css">
+    
     <title>ELIMINAR</title>
 </head>
 <body>
@@ -32,10 +32,11 @@
                     } else {
                         $producto = mysqli_fetch_assoc($consulta);
                         echo "<h2>DETALLES DEL PRODUCTO:</h2>";
+                        ?>
+                        <img width="200px" height="200px" src="data:image/jpg;base64, <?php echo base64_encode($producto['img_producto'])?>" >
+                        <br><?php
                         echo "Nombre: " . $producto['name_producto'] . "<br>";
-                        echo "Precio: " . $producto['precio_producto'] . "<br>";?>
-                        <tr><td><img width="200px" src="data:image/jpg;base64, <?php echo base64_encode($producto['img_producto'])?>"></td></tr>
-                        <?php
+                        echo "Precio: " . $producto['precio_producto'] . "<br>";
                     }
                 }
             }    
