@@ -18,37 +18,23 @@
             
 		</div>
         
-        <?php 
-        	include("conexion.php");
-           
-           
-            if (isset($_POST['busqueda'])) {
-                if (strlen($_POST['codigoproducto']) >= 1) {
-                   
-                    $id = trim($_POST['codigoproducto']);
-                    $consulta = mysqli_query($conex, "SELECT * FROM tabla_productos WHERE id_producto='$id'");
+        <?php
+        include("conexion.php");
         
-                    if (mysqli_num_rows($consulta) === 0) {
-                        echo "Producto no encontrado.";
-                    } else {
-                        $producto = mysqli_fetch_assoc($consulta);
-                        echo "<h2>DETALLES DEL PRODUCTO:</h2>";
-                        echo "Nombre: " . $producto['name_producto'] . "<br>";
-                        echo "Precio: " . $producto['precio_producto'] . "<br>";?>
-                        <tr><td><img width="200px" src="data:image/jpg;base64, <?php echo base64_encode($mostrar['img_producto'])?>"></td></tr>
-                        <?php
-                    }
-                }
-            }    
-            
-            if (isset($_POST['EliminarProducto'])) {
-                if (strlen($_POST['codigoproducto']) >= 1) {
-                    $id = trim($_POST['codigoproducto']);
-                    $eliminar = mysqli_query($conex, "DELETE FROM tabla_productos WHERE id_producto='$id'");
-                    echo "Producto eliminado correctamente.";
-                }
-            }    
-            ?>
+        $muestra = "SELECT name_producto, precio_producto, img_producto FROM tabla_productos";
+        $conexion_muestra = mysqli_query($conex, $muestra);
+        while($mostrar = mysqli_fetch_array($conexion_muestra)){
+    ?>
+            <table border="2">
+            <tr><td><img width="200px" src="data:image/jpg;base64, <?php echo base64_encode($mostrar['img_producto'])?>"></td></tr>
+            <tr><td><?php echo $mostrar['name_producto']?></td></tr>
+            <tr><td><?php echo $mostrar['precio_producto']?></td></tr>
+            </table>
+        </br>
+
+        <?php
+        }
+        ?>
    
 </body>
 </html>
