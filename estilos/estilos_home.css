@@ -1,3 +1,11 @@
+/* variables globales*/
+:root{
+    --primary-color:#011b38;
+    --secundary-color:#ffffff;
+}
+
+
+/* general */
 body{
     margin: 0;
     padding: 0;
@@ -57,12 +65,12 @@ img{
 }
 #home-section h1{
     text-align: center;
-    color: #ffffff;
+    color: var(--secundary-color);
     font-size: 40px;
 }
 .p-home-section{
     text-align: center;
-    color: #ffffff;
+    color: var(--secundary-color);
     width: 250px;
 }
 .a-home-section{
@@ -73,24 +81,24 @@ img{
     align-items: center;
     margin: 20px auto;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--secundary-color);
     background:none;
     border-radius: 1rem;
-    border: 5px double #ffffff;
+    border: 5px double var(--secundary-color);
 }
 #a-home-section-1{
-    background-color: #ffffff;
-    color: #011b38;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
     
 }
 #a-home-section-1:hover{
-    background-color: #011b38;
-    color: #ffffff;
+    background-color: var(--primary-color);
+    color:var(--secundary-color);
     transition: 40ms;
 }
 #a-home-section-2:hover{
-    background-color: #ffffff;
-    color: #011b38;
+    background-color: var(--secundary-color);
+    color: var(--primary-color);
     transition: 40ms;
 }
 /* Inicio: estilo card de servicio: componente */
@@ -112,8 +120,29 @@ img{
 /* Fin estilos card de srevicio */
 
 /* menu movil hamburguesa */
-.section-menu-mobile{
-
+.menu-mobile{
+    width: 200px;
+    height: 100vh;
+    border: 1px solid var(--secundary-color);
+    margin: 0;
+    position: absolute;
+    right: 0;
+    background-color: #ffffff;
+    padding: 10px;
+}
+.menu-mobile a{
+    width: 100%;
+}
+#ocultar-menu-mobile{
+    margin: 150px;
+}
+.menu-mobile li{
+    list-style: none;
+}
+.menu-mobile a img{
+    width: 30px;
+    height: 25px;
+    position: absolute;
 }
 /* medias query */
 @media screen and (min-width:800px){
@@ -126,7 +155,7 @@ img{
         text-decoration: none;
         width: 70px;
         height: 25px;
-        color: #011b38;
+        color: var(--primary-color);
     }
     .header-a-menu{
         display: none;

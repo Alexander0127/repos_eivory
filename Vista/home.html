@@ -11,11 +11,20 @@
 </head>
 <body>
     <main>
+        <div id="menu-mobile" class="menu-mobile">
+            <a onclick="ocultarMenu()" id="ocultar-menu-mobile" href="#"><img src="../Imagenes/menu.png" alt=""></a>
+            <ul>
+                <li class="li-menu-mobile"><a class="a-menu-mobile" href="#">Nosotros</a></li>
+                <li class="li-menu-mobile"><a class="a-menu-mobile" href="#">Nosotros</a></li>
+                <li class="li-menu-mobile"><a class="a-menu-mobile" href="#">Nosotros</a></li>
+                <li class="li-menu-mobile"><a class="a-menu-mobile" href="#">Nosotros</a></li>
+            </ul>
+        </div>
         <header>
             <div class="header-logo">
                 <a href="../Vista/home.html"><img src="../Imagenes/eivory-e1660322940284.png" alt=""></a>
             </div>
-            <a class="header-a-menu" href=""><img src="../Imagenes/menu.png" alt=""></a>
+            <a onclick="mostrarMenu()" class="header-a-menu" href="#"><img src="../Imagenes/menu.png" alt=""></a>
             <ul>
                 <li class="li-navbar"><a href="#" class="a-navbar">Servicios</a></li>
             </ul>
@@ -65,14 +74,7 @@
         <section class="section-main">
 
         </section>
-        <section class="section-menu-mobile">
-            <ul>
-                <li class="li"><a href="">Servicios</a></li>
-                <li class="li"><a href="">Servicios</a></li>
-                <li class="li"><a href="">Servicios</a></li>
-                <li class="li"><a href="">Servicios</a></li>
-            </ul>
-        </section>
     </main>  
+    <script src="./home.js"></script>
 </body>
 </html>
