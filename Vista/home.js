@@ -1,5 +1,6 @@
-var div_menu = document.getElementById("menu-mobile");
+
 function mostrarMenu(){
+    var main = document.getElementById("main");
     var div_menu = document.getElementById("menu-mobile");
     if(div_menu.style.display=="none"){
         div_menu.style.display="block";
